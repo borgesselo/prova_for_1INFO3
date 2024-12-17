@@ -7,11 +7,17 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
+    const numero = Number(prompt(`Informe um número:`));
+    let lista = [];
 
     //Processamento
-
+    for (let i = 1; i <= numero; i++) {
+        if (numero % i == 0) {
+            lista.push(i)
+        }
+    }
 
     //Saída
+    document.write (`${lista}`);
 
 </script>
